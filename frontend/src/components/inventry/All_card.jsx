@@ -25,7 +25,7 @@ function All_card({ data ,getPost}) {
     const handle_book_delete = async () => {
      
         try {
-          const res = await axios.delete(`http://localhost:8088/delete/${data?._id}`);
+          const res = await axios.delete(`https://gold-stone-tech-second-microservices-api.vercel.app/delete/${data?._id}`);
          console.log(res)
           toast({
             title: `${res.data}`,

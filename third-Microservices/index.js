@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { connection } = require("./config/db");
+const  connection  = require("./config/db");
 require("dotenv").config();
 const { default: axios } = require("axios");
 const { DataModel } = require("./model/Data.Model");
@@ -87,9 +87,10 @@ app.get("/dataFile", async (req, res) => {
 
 
 
+connection()
 app.listen(process.env.port, async () => {
   try {
-    await connection;
+    // await connection;
     console.log("connected to the db");
   } catch (error) {
     console.log(error);

@@ -8,8 +8,8 @@ function Invenrty() {
   // console.log(getdata)
   const getPost = async () => {
     try {
-      const res = await axios();
-      // `http://localhost:8088/all`
+      const res = await axios(
+      `http://localhost:8088/all`)
       setgetdata(res.data);
     } catch (error) {
       console.log(error);
@@ -20,14 +20,7 @@ function Invenrty() {
     getPost();
   }, []);
 
-  const handle_download = async () => {
-    try {
-      const res = await axios.get(`http://localhost:8088/dataFile`);
-      console.log(res.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+
 
   const [csvData, setCsvData] = useState("");
 
