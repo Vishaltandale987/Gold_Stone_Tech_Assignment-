@@ -27,7 +27,7 @@ function EditForm({ get_data_by_id, onClose , getPost}) {
   const Edit_from = async () => {
     try {
       let res = await axios.put(
-        `http://localhost:8088/update/${get_data_by_id}`,
+        `https://gold-stone-tech-second-microservices-api.vercel.app/update/${get_data_by_id}`,
         result
       );
 

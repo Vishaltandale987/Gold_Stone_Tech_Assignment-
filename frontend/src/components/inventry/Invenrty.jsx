@@ -9,7 +9,7 @@ function Invenrty() {
   const getPost = async () => {
     try {
       const res = await axios(
-      `http://localhost:8088/all`)
+      `https://gold-stone-tech-second-microservices-api.vercel.app/all`)
       setgetdata(res.data);
     } catch (error) {
       console.log(error);
@@ -27,8 +27,8 @@ function Invenrty() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8088/dataFile", {
-          responseType: "blob", // Specify response type as blob to handle binary data
+        const response = await axios.get("https://gold-stone-tech-assignment.vercel.app/dataFile", {
+          responseType: "blob", 
         });
 
         const blob = new Blob([response.data], { type: "text/csv" });
