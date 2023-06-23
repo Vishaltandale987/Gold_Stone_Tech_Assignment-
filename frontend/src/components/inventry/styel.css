@@ -4,6 +4,7 @@
     padding: 1em;
     text-align: left;
     /* background-color: rgb(198, 224, 226); */
+    border: 2px solid black;
 }
 
 .inventry{
@@ -23,7 +24,13 @@
 .download{
     border: 2px solid gray;
     padding: 0.5em;
-    float: right;
     margin-right: 2em;
-    margin-top: 1em;
+    margin-top: 2em;
+}
+
+.add{
+
+    display: flex;
+    justify-content: end;
+
 }

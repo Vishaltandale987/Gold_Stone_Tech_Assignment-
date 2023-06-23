@@ -45,10 +45,13 @@ function Invenrty() {
 
   return (
     <div>
+<div className="add">
 
       <a href={csvData} download="DataFile.csv" className="download" >
         <b> Download CSV File </b>
       </a>
+</div>
+
     <div className="inventry">
 
         
