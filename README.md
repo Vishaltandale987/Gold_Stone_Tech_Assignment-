@@ -7,6 +7,6 @@
 [Backend](https://gold-stone-tech-second-microservices-api.vercel.app/) - Deployed Link <br />
 here I have implemented all CRUD Operations.<br />
 [Backend](https://gold-stone-tech-assignment.vercel.app/) - Deployed Link <br />
- here I have implemented export the data into CSV<br />
+ here I have created CVG file and send to frontend  <br />
 
 
